@@ -59,7 +59,7 @@ router.get('/logout', isLoggedIn, function(req, res, next) {
 
 //registeration form
 router.get("/register",function(req,res){
-    res.render("u_register");
+    res.render("t_uregister");
 });
 
 //post method
@@ -125,7 +125,7 @@ router.get("/register",function(req,res){
 //get method
 router.get("/login",function(req,res)
 {
-    res.render("u_login");
+    res.render("t_ulogin");
 })
 
 router.post("/login",authUser.authenticate("local",{
@@ -292,7 +292,7 @@ router.get("/:id/jobs/applied", function(req, res){
        {    
         models2.Job.find({'_id': {$in: users.applied_jobs} }, function(err, docs){
             data=docs;
-             res.render("t_jobs",{
+             res.render("t_applied",{
                  alljobs:docs, userid:req.params.id // for appliedjobs
              })
         });

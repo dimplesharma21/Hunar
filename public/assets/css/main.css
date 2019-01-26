@@ -2954,8 +2954,8 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #f2f2f2;
-			color: #a6a6a6;
+			
+			color: #000000;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -2972,6 +2972,7 @@
 
 			.wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
 				color: #000;
+				margin-bottom: 1em;
 			}
 
 			.wrapper.style2 blockquote {
@@ -3140,7 +3141,7 @@
 			}
 
 			.wrapper.style2 header p {
-				color: #999999;
+				color: #000000;
 			}
 
 			.wrapper.style2 table tbody tr {
@@ -3511,18 +3512,16 @@
 	}
 
 	#header {
-		background: rgba(0, 0, 0, 0.75);
-		color: #a6a6a6;
-		cursor: default;
-		height: 3.25em;
-		left: 0;
-		line-height: 3.25em;
-		position: fixed;
-		text-align: right;
-		top: 0;
-		width: 100%;
-		z-index: 10001;
-	}
+	background: rgba(0, 0, 0, 0.8);
+    padding: 14px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+
 
 		#header .toggle span {
 			display: none;

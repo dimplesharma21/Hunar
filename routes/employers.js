@@ -43,7 +43,7 @@ router.get('/logout', isLoggedIn, function(req, res, next) {
 
 //registeration page 
 router.get("/register",function(req,res){
-    res.render("registeremp");
+    res.render("t_eregister");
 });
 
 
@@ -97,7 +97,7 @@ router.post("/register", function(req,res){
 //get method
 router.get("/login",function(req,res)
 {
-    res.render("e_login");
+    res.render("t_elogin");
 })
 
 router.post("/login",authEmployer.authenticate("local",{
@@ -108,7 +108,7 @@ router.post("/login",authEmployer.authenticate("local",{
   //redirecting to user
   models2.Employer.findOne({username: req.body.username}, function(err, employer){
     console.log(req.body.username);
-    var redirectUrl='/employers/'+employer._id+"/jobs";
+    var redirectUrl='/employers/'+employer._id;
     res.redirect(redirectUrl);
        })
 
@@ -194,7 +194,7 @@ models2.Employer.findOne({_id:req.params.id},function(err,employer)
 // adding a new job 
 
 router.get("/:id/jobs/new",function(req,res){
-  res.render("newjob", {jo:req.params.id});
+  res.render("t_enew", {jo:req.params.id});
 })
 
 router.post("/:id/jobs/new",function(req,res){

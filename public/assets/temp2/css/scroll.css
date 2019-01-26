@@ -62,9 +62,7 @@
      background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
 }
- .content{
-    height: 750px;
-}
+
 /* Scrollbar Css*/
  .scrollbar{
      height: 800px;

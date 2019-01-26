@@ -2214,13 +2214,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .p1-gradient-bg, .banner-area .overlay-bg, .sidebar .single-slidebar .cat-list li:hover, .callto-action-area, .single-price:hover .price-bottom, .single-service:hover, .submit-right, .submit-left, .contact-btns, .form-area .primary-btn {
   background-image: -moz-linear-gradient(0deg, #bfacff 0%, #795fff 100%);
-  background-image: -webkit-linear-gradient(0deg, #bfacff 0%, #795fff 100%);
+  background-image: -webkit-linear-gradient(0deg, #ff8447 0%, #4286f4 100%);
   background-image: -ms-linear-gradient(0deg, #bfacff 0%, #795fff 100%);
 }
 
 .p1-gradient-color, .feat-txt h1 {
   background: -moz-linear-gradient(0deg, #bfacff 0%, #795fff 100%);
-  background: -webkit-linear-gradient(0deg, #bfacff 0%, #795fff 100%);
+  background: -webkit-linear-gradient(0deg, #ff8447 0%, #4286f4 100%);
   background: -ms-linear-gradient(0deg, #bfacff 0%, #795fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2857,7 +2857,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 10px;
   text-transform: capitalize;
   border-radius: 0;
-  background-color: #49e4fa;
+  background-color: #1c72ff;
   color: #fff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -2866,7 +2866,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .callto-action-area .primary-btn:hover {
-  background-color: #ad9aff;
+  background-color: #ff731c;
   color: #fff;
   border-color: transparent;
 }
@@ -3083,7 +3083,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background: #49e4fa;
+  background: #4286f4;
 }
 
 .single-review .title {
@@ -3118,11 +3118,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area .footer-nav li a:hover {
-  color: #49e4fa;
+  color: #ff731c;
 }
 
 .footer-area .primary-btn {
-  background-color: #49e4fa;
+  background-color: #1c72ff;
   line-height: 42px;
   padding-left: 30px;
   padding-right: 60px;
@@ -3158,7 +3158,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area .primary-btn:hover {
-  background-color: #49e4fa;
+  background-color: #ff731c;
   box-shadow: none;
   color: #fff;
 }
@@ -3229,7 +3229,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-social a:hover {
-  background-color: #49e4fa;
+  background-color: #ff731c;
 }
 
 .footer-social a:hover i {

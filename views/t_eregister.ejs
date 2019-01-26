@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="zxx" class="no-js">
     <head>
-        <title>Post Job</title>
+        <title>Register Employer</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="/assets/css/main.css" />
@@ -91,7 +91,7 @@
                       <nav id="nav-menu-container">
                         <ul class="nav-menu">
                           <li><a id="google_translate_element"></a></li>
-                          <li class="menu-active"><a href="/employers/<%=jo%>">Home</a></li>
+                          <li class="menu-active"><a href="/">Home</a></li>
                           <li><a href="about-us.html">About Us</a></li>
                           <li><a href="category.html">Category</a></li>
                           <li><a href="price.html">Price</a></li>
@@ -105,7 +105,7 @@
                             </ul>
                           </li>
                           <!-- <li><a class="ticker-btn" href="#">Signup</a></li> -->
-                          <li><a class="ticker-btn" href="/employers/logout">Logout</a></li>                                                  
+                          <!-- <li><a class="ticker-btn" href="/employers/logout">Logout</a></li>                                                   -->
                         </ul>
                       </nav>
                       <!-- #nav-menu-container -->                  
@@ -121,137 +121,174 @@
 
                     <!-- Elements -->
                         
-                        <center> <h3 id="elements"> Post job </h3>   </center>
+                        <center><h3 id="elements"> Employer/job provider</h3></center>
                         <div class="row 200%">    
                                     
-                            
+                            </div>
                             <div class="12u$ 12u$(medium)">
 
                                 <!-- Form -->
-                                    <h4> Job Details </h4>
+                                    <h4>Create your account by filling following details.</h4>
 
-                                    <form method="post" action="/employers/<%= jo %>/jobs/new">
+                                    <form method="post" action="/employers/register">
                                         <div class="row uniform">
                                             
                                             <div class="6u 12u$(xsmall)">
-                                                <input type="text" name="jobtitle" placeholder="Job Title" />
+                                                <input type="email" name="username" placeholder="Email" />
                                             </div>
 
                                             <div class="6u 12u$(xsmall)">
-                                                <div class="select-wrapper">
-                                                    <select name="jobtype">
-                                                        <option value="">Job Type</option>
-                                                        <option value="Full Time">Full Time Job</option>
-                                                        <option value="Seasonal">Seasonal</option>                                  
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="12u 12u$(xsmall)">
-                                                <div class="select-wrapper">
-                                                    <select name="jobcategory" id="jobcategory">
-                                                        <option value="">Select Industry Type</option>
-                                                        <option value="Hotel">Hotel</option>
-                                                        <option value="Computer (Corporate/IT)">Computer (Corporate/IT)</option>
-                                                        <option value="Hospital">Hospital</option>
-                                                        <option value="Municipal Corportaion">Municipal Corportaion</option>    
-                                                        <option value="Education">Education</option>
-                                                        <option value="Research">Research</option>
-                                                        <option value="Sports">Sports</option>
-                                                        <option value="Sanitation">Sanitation</option>
-                                                        <option value="Food">Food</option>
-                                                        <option value="Financial/Consultancy">Financial/Consultancy</option>
-                                                        <option value="Aviation">Aviation</option>
-                                                        <option value="Railways">Railways</option>
-                                                        <option value="Textile">Textile</option>
-                                                        <option value="Agriculture">Agriculture</option>
-                                                        <option value="Automobile">Automobile</option>
-                                                        <option value="Paper">Paper</option>
-                                                        <option value="Event Management">Event Management</option>
-                                                        <option value="Art and Creativity">Art and Creativity</option>            
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="12u 12u$(xsmall)">
-                                                <div class="select-wrapper">
-                                                    <select name="jobsector">
-                                                        <option value="">Job Type</option>
-                                                        <option value="Government">Government</option>
-                                                        <option value="Public Sector Units (PSUs)">Public Sector Units (PSUs)</option>
-                                                        <option value="Private">Private</option>
-                                                                
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="12u 12u$(xsmall)">
-                                                <input type="text" name="location" placeholder="Write in format- City, India" />
+                                                <input type="password" name="password" placeholder="Password" />
                                             </div>
 
                                             <div class="6u 12u$(xsmall)">
-                                                <label>Job Start Date :
-                                                <input type="date" name="startdate" placeholder="Start Date (dd/mm/yyyy)" />
-                                                </label>
-                                            </div>
-
-                                            <div class="6u 12u$(xsmall)">
-                                                <label>Job End Date :
-                                                <input type="date" name="enddate" placeholder="End Date (dd/mm/yyyy)" />
-                                                </label>
-                                            </div>
-
-
-                                            <div class="6u 12u$(xsmall)">
-
-                                                <label> Application Deadline Date :
-                                                <input type="date" name="deadlinedate" placeholder="Application Deadline Date (dd/mm/yyyy)" />
-                                                </label>
-                                            </div>
-
-
-                                            <div class="6u 12u$(xsmall)">
-                                                <input type="number" name="positions" placeholder="Number of positions available" />
+                                                <input type="password" name="confirmpassword" placeholder="Confirm Password" />
                                             </div>
 
                                             <div class="12u$">
 
                                             <hr>
 
-                                            <h4 id="elements"> Responsibilities and Skills </h4>
+                                            <h4 id="elements"> Company Details</h4>
                     
                                             </div>
 
-                                            <div class="12u$">
-                                                
-                                                <textarea name="about" placeholder=" About The Job" rows="5"></textarea>
-                                            </div>
-
-                                            <div class="12u$">
-                                                <input type="text" name="skillsrequired" placeholder="Skills Required By The Candidate" />
-                                            </div>
-
-                                            <div class="12u$">
-                                                <textarea name="responsibilities" placeholder=" Responsibilities " rows="5"></textarea>
-                                            </div>
-                                      
                                             <div class="6u 12u$(xsmall)">
-                                                <input type="number" name="minsalary" placeholder="Salary Range: Minimum Salary">
+                                                <input type="text" name="companyname" id="companyname" placeholder=" Company Name" />
                                             </div>
 
 
                                             <div class="6u 12u$(xsmall)">
-                                                <input type="number" name="maxsalary" placeholder="Salary Range: Maximum Salary">
+                                                <input type="text" name="companytype" id="companytype" placeholder=" Company Type " />
+                                            </div>
+
+
+                                            <div class="12u$">
+                                                <textarea name="companydescription" rows="5" placeholder="Company Description"></textarea>
+                                            </div>
+
+
+                                            <div class="12u$">
+                                                <input type="text" name="companyaddressline1" id="companyaddressline1" placeholder=" Company Address line 1" />
+                                            </div>
+
+                                            <div class="12u$">
+                                                <input type="text" name="companyaddressline2" id="companyaddressline2" value="" placeholder=" Company Address Line 2" />
+                                            </div>
+
+                                            <div class="12u$">
+                                            <div class="select-wrapper">
+                                                <select name="state">
+<option value="">------------Select State------------</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Orissa">Orissa</option>
+<option value="Pondicherry">Pondicherry</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttaranchal">Uttaranchal</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="West Bengal">West Bengal</option>
+</select>
+</div>
+                                            </div>
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="city" id="city" value="" placeholder=" City/Village " />
+                                            </div>
+
+
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="number" name="postalcode" id="postalcode" placeholder=" Pin Code " />
+                                            </div>
+
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="number" name="companycontactnumber" id="companycontactnumber" placeholder=" Company Contact Number " />
+                                            </div>
+                                            
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="contactperson1" id="contactperson1" placeholder=" Contact Person 1 Authorized by(HOD/Lead Name) " />
+                                            </div>
+                                            
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="contactperson2" id="contactperson2" placeholder=" Contact Person 2 Authorized by(HOD/Lead Name) " />
+                                            </div>
+                                            
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="number" name="certificatenumber" id="certificatenumber" value="" placeholder=" Registration Certificate No. " />
+                                            </div>
+                                            
+                                            <div class="6u 12u$(xsmall)">
+                                                <div class="select-wrapper">
+                                                    <select name="audityear">
+                                                        <option value="">Year of Audit/Annual Report:</option>
+                                                        <option value="2000">2000</option>
+                                                        <option value="2001">2001</option>
+                                                        <option value="2002">2002</option>
+                                                        <option value="2003">2003</option>            
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="pannumber" id="pannumber" placeholder=" PAN card of employer" />
+                                            </div>
+                                            
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="email" name="approvingemail" placeholder=" Approving Authority Email Id " />
                                             </div>
                                             
                                             <div class="12u$">
 
                                             <hr>
-                                            <div class="6u$ 12u$(small)">
-                                                <input type="checkbox" id="human" name="human" required>
-                                                <label for="human">I agree to the terms and conditions.</label>
+                                          <!--   <div class="6u$ 12u$(small)">
+                                                <input type="checkbox" id="human" name="human">
+                                                <label for="demo-human">I agree to the terms and conditions.</label>
+                                            </div> -->
+                                            <!-- START CAPTCHA -->
+                                          <!--   <br>
+                                            <div class="capbox">
+
+                                            <div id="CaptchaDiv"></div>
+
+                                            <div class="capbox-inner">
+                                            Type the above number:<br>
+
+                                            <input type="hidden" id="txtCaptcha">
+                                            <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+
                                             </div>
-                                            
+                                            </div>
+                                            <br><br>
+ -->                                            <!-- END CAPTCHA -->
 
                                             <div class="row uniform">
                                             
@@ -280,6 +317,7 @@
                     </div>
                 </div>
             </section>
+
         
     
             <script src="/assets/js/jquery.min.js"></script>

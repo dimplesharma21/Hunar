@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="zxx" class="no-js">
+    <head>
+        <title>User Login</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/assets/css/main.css" />
+
+         <style>
+  .capbox {
+    background-color: #92D433;
+    border: #B3E272 0px solid;
+    border-width: 0px 12px 0px 0px;
+    display: inline-block;
+    *display: inline; zoom: 1; /* FOR IE7-8 */
+    padding: 8px 40px 8px 8px;
+    }
+
+.capbox-inner {
+    font: bold 11px arial, sans-serif;
+    color: #000000;
+    background-color: #DBF3BA;
+    margin: 5px auto 0px auto;
+    padding: 3px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    }
+
+#CaptchaDiv {
+    font: bold 17px verdana, arial, sans-serif;
+    font-style: italic;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    }
+
+#CaptchaInput { margin: 1px 0px 1px 0px; width: 135px; }
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+            <!--/assets/css2/main.css
+            CSS
+            ============================================= -->
+            <link rel="stylesheet" href="/assets/temp2/css/linearicons.css">
+            <link rel="stylesheet" href="/assets/temp2/css/font-awesome.min.css">
+            <link rel="stylesheet" href="/assets/temp2/css/bootstrap.css">
+            <link rel="stylesheet" href="/assets/temp2/css/magnific-popup.css">
+            <link rel="stylesheet" href="/assets/temp2/css/nice-select.css">                    
+            <link rel="stylesheet" href="/assets/temp2/css/animate.min.css">
+            <link rel="stylesheet" href="/assets/temp2/css/owl.carousel.css">
+            <link rel="stylesheet" href="/assets/temp2/css/main.css">
+            <link rel="stylesheet" href="/assets/temp2/css/scroll.css">
+
+
+    </head>
+    <body class="subpage">
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages:'en,hi,as,bn,gu,kn,ks,ml,mr,or,sa,ta,te', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+            </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <!-- Header -->
+            <!-- <header id="header">
+                <div class="logo">Utthan</div>
+                <a href="#menu" class="toggle"><span>Menu</span></a>
+            </header> -->
+
+        <!-- Nav -->
+            <!-- <nav id="menu">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="generic.html">Generic</a></li>
+                    <li><a href="elements.html">Elements</a></li>
+                </ul>
+            </nav> -->
+
+            <header id="header" id="home">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between d-flex">
+                      <div id="logo">
+                        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+                      </div>
+                      <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                          <li><a id="google_translate_element"></a></li>
+                          <li class="menu-active"><a href="/">Home</a></li>
+                          <li><a href="/#aboutus">About Us</a></li>
+                          <li><a href="/#service">Services</a></li>
+                          <!-- <li><a href="price.html">Price</a></li> -->
+                          <!-- <li><a href="blog-home.html">Blog</a></li> -->
+                          <li><a href="/#foot">Contact</a></li>
+                          <!-- <li class="menu-has-children"><a href="">Pages</a>
+                            <ul>
+                                <li><a href="elements.html">elements</a></li>
+                                <li><a href="search.html">search</a></li>
+                                <li><a href="single.html">single</a></li>
+                            </ul>
+                          </li>  -->  
+                           <li><a class="ticker-btn" href="/users/register">Register</a></li>                                                
+                        </ul>
+                      </nav>
+                      <!-- #nav-menu-container -->                  
+                    </div>
+                </div>
+              </header><!-- #header -->
+
+            <section id="banner" img="images/e1.jpg">
+                <div class="inner">
+                    <h1>User Login</h1>
+                    <!-- <p>Login to take test. </p> -->
+                    <form method="post" action="/users/login">
+                    <div class="field half first">
+                        <h3 class="log">Username</h3>
+                        <input type="text" name="username" id="un">
+                    </div>
+                    <div class="field half first">
+                        <h3 class="log">Password</h3>
+                        <input type="password" name="password" id="pw">
+                    </div>
+                    <br>
+                    <button type="submit" class="button special">Login</button>
+                    </form>
+                </div>
+            </section>
+           
+            <script src="/assets/js/jquery.min.js"></script>
+            <script src="/assets/js/jquery.scrolly.min.js"></script>
+            <script src="/assets/js/jquery.scrollex.min.js"></script>
+            <script src="/assets/js/skel.min.js"></script>
+            <script src="/assets/js/util.js"></script>
+            <script src="/assets/js/main.js"></script>
+            <script src="/assets/temp2/js/vendor/jquery-2.2.4.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="/assets/temp2/js/vendor/bootstrap.min.js"></script>            
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+            <script src="/assets/temp2/js/easing.min.js"></script>          
+            <script src="/assets/temp2/js/hoverIntent.js"></script>
+            <script src="/assets/temp2/js/superfish.min.js"></script>   
+            <script src="/assets/temp2/js/jquery.ajaxchimp.min.js"></script>
+            <script src="/assets/temp2/js/jquery.magnific-popup.min.js"></script>   
+            <script src="/assets/temp2/js/owl.carousel.min.js"></script>            
+            <script src="/assets/temp2/js/jquery.sticky.js"></script>
+            <script src="/assets/temp2/js/jquery.nice-select.min.js"></script>          
+            <script src="/assets/temp2/js/parallax.min.js"></script>        
+            <script src="/assets/temp2/js/mail-script.js"></script> 
+            <script src="/assets/temp2/js/main.js"></script>
+
+    </body>
+</html>

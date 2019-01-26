@@ -65,6 +65,23 @@ app.use(function(req, res, next) {
 app.get('/', function(req, res){
 	res.render("t_home");
 })
+
+app.get('/information', function(req, res){
+	res.render("t_info");
+})
+
+app.get('/information/test', function(req, res){
+	res.render("t_info_test");
+})
+
+app.get('/information/schedule', function(req, res){
+	res.render("t_info_schedule");
+})
+
+app.get('/information/interview', function(req, res){
+	res.render("t_info_interview");
+})
+
 //routes
 
 app.use('/', routes);
