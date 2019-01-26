@@ -1,0 +1,202 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Internship opportunity</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		
+
+    </style>
+		</head>
+	<body class="subpage">
+	        <!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Utthan</div>
+				<a href="#menu" class="toggle"><span>Menu</span></a>
+			</header>
+
+		    <!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav>
+			<div class="jumbotron">
+			<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-3">
+			 <div class="container">
+				  
+				 <div class="inner">
+					<div class="box">
+					 <div class="card">
+					  <h3>Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
+									Finally, this is a <a href="#">link</a>.</p>
+					 </div>
+					</div>
+				 </div>
+				
+				</div>
+			 </div>
+			<div class="col-sm-7">
+			 <div class="container">				
+				  <div class="inner">
+					<div class="box">
+					 <div class="content">
+
+					    <!-- Elements -->
+					     
+						<h4 id="elements"> <%= alljobs[0].jobtitle %> <br> </h4>
+						          <div class="col-sm-6">		
+										<h5> <%= alljobs[0].jobtype %> </p>
+										<h5> Start Date : <%= alljobs[0].startdate %> </p>
+								  </div>
+								  <div class="col-sm-6">		
+										<h5> Job Type: <%= alljobs[0].jobtype %> </p>
+										<h5> End Date : <%= alljobs[0].enddate %> </p>
+								  </div>
+									<button type="button" class="btn btn-info btn-lg" data-toggle="modal"  data-target="#myModal">Details</button>
+										  <!-- Modal -->
+										  <div class="modal fade" id="myModal" role="dialog">
+											<div class="modal-dialog" style="width: 1300px; height: 500px;">
+											
+											  <!-- Modal content-->
+											  <div class="modal-content">
+												<div class="modal-header">
+												  <button type="button" class="close" data-dismiss="modal">&times;</button>
+												  <h4 class="modal-title">Modal Header</h4>
+												</div>
+												<!-- modal body-->
+												<div class="modal-body" style="height: 500px;">
+												 <div class= "container">			
+														<div class="col-sm-12" id="desc">
+														 <h4> <%= alljobs[0].jobtitle %> <br></h4>														 
+														 <div class="col-sm-6">		
+															<h5> Job Type: <%= alljobs[0].jobtype %> </p>
+															<h5> Job Category: <%= alljobs[0].jobcategory %> </p>
+															<h5> Start Date : <%= alljobs[0].startdate %> </p>
+														 </div>
+														 <div class="col-sm-6">		
+															<h5> Job location: <%= alljobs[0].location %> </h5>
+															<h5> position available: <%= alljobs[0].positions %> </p>
+															<h5> End Date: <%= alljobs[0].enddate %>  </p>
+														 </div>
+																<button class="btn btn-primary" type="button" id="recom">Apply Now </button> 
+																<hr>
+																<small scrolling="yes"> <%= alljobs[0].about %> </small>
+														</div>
+													</div> 
+    
+    
+												</div>
+												<!--modal body-->
+												<div class="modal-footer">
+												  <button type="button"  data-dismiss="modal">Close</button>
+												</div>
+											  </div>
+											  
+											</div>
+										
+										  </div>
+										  
+  
+					 </div>
+					</div>
+				  </div>			
+				</div>
+				<!-- part 2 ... start looping-->
+				<% for(var i=1; i<alljobs.length; i++){ %>
+				<div class="col-sm-12">
+			     <div class="container">				
+				  <div class="inner">
+					<div class="box">
+					 <div class="content">
+
+					    <!-- Elements -->
+					      
+						<h4 id="elements"><%= alljobs[i].jobtitle %><br></h4>
+						          <div class="col-sm-6">		
+										<h5> <%= alljobs[i].jobtype %> </p>
+										<h5> Start Date: <%= alljobs[i].startdate %> </p>
+								  </div>
+								  <div class="col-sm-6">		
+										<h5> Job Type: <%= alljobs[i].jobtype %> </p>
+										<h5> End Date: <%= alljobs[i].enddate %> </p>
+								  </div>
+									<button type="button" class="btn btn-info btn-lg" data-toggle="modal"  data-target="#myModal">Details</button>
+										  <!-- Modal -->
+										  <div class="modal fade" id="myModal" role="dialog">
+											<div class="modal-dialog" style="width: 1300px; height: 500px;">
+											
+											  <!-- Modal content-->
+											  <div class="modal-content">
+												<div class="modal-header">
+												  <button type="button" class="close" data-dismiss="modal">&times;</button>
+												  <h4 class="modal-title">Modal Header</h4>
+												</div>
+												<!-- modal body-->
+												<div class="modal-body" style="height: 500px;">
+												 <div class= "container">			
+														<div class="col-sm-12" id="desc">
+														 <h4> <%= alljobs[i].jobtitle %> <br></h4>														 
+														 <div class="col-sm-6">		
+															<h5> Job Type: <%= alljobs[i].jobtype %> </p>
+															<h5> Job Category: <%= alljobs[i].jobcategory %> </p>
+															<h5> Start Date: <%= alljobs[i].jobtitle %> </p>
+														 </div>
+														 <div class="col-sm-6">		
+															<h5> Job location: <%= alljobs[i].location %> </h5>
+															<h5> Position available: <%= alljobs[i].positions %> </p>
+															<h5> End Date: <%= alljobs[i].jobtitle %>  </p>
+														 </div>
+																<button class="btn btn-primary" type="button" id="recom">Apply Now </button> 
+																<hr>
+																<small scrolling="yes"> <%= alljobs[i].about %> </small>
+														</div>
+													</div> 
+    
+    
+												</div>
+												<!--modal body-->
+												<div class="modal-footer">
+												  <button type="button"  data-dismiss="modal">Close</button>
+												</div>
+											  </div>
+											  
+											</div>
+										  </div>
+										  
+  
+					 </div>
+					</div>
+				  </div>			
+				</div>
+				
+			 </div>
+			 </div>
+			 	<% } %>
+			 <div class="col-sm-1"></div>
+			</div>
+			
+			
+			</div>
+		
+
+			
+				
+			
+	</body>
+</html>

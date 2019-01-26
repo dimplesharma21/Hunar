@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Utthan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	<style>
+	.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+	</style>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+
+
+<form method="post" action ="">
+
+
+<input type = "text" name="city" placeholder="city">
+<input type = "text" name="institutiontype" placeholder="institutiontype">
+<input type="submit">
+
+</form>
+
+
+
+
+
+
+
+			<header id="header">
+				<div class="logo">Utthan</div>
+				<a href="#menu" class="toggle"><span>Menu</span></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="container">
+					<div class="box">
+					<div class="content">
+                    
+					
+					<!-- Elements -->
+						
+                        
+						<header class="accordion">
+							<h2> Trainings Posted</h2>
+							<p>Manage all posted trainings.</p>
+						</header>
+							<div class="jumbotron">
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead class="header" id="myHeader">
+
+												<tr>
+													<th>training title</th>
+													<th>training type</th>
+													<th>training category</th>
+													<th>location</th>
+												</tr>
+											</thead>
+											<tbody>
+												<% for(var i=0; i<alltrainings.length; i++){ %>
+												<tr>
+													<td><%=alltrainings[i].trainingtitle %></td>
+													<td><%=alltrainings[i].trainingtype %></td>
+													<td><%=alltrainings[i].trainingcategory %></td>
+													<td><%=alltrainings[i].city %></td>
+												</tr>
+												<% } %>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="3"></td>
+													<td>
+													<ul class="pagination">
+														<li ><a href="#">1</a></li>
+														<li><a href="#">2</a></li>
+														<li><a href="#">3</a></li>
+														<li><a href="#">4</a></li>
+														<li><a href="#">5</a></li>
+													  </ul>     
+												    </td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>			
+                            </div>
+					    </div>
+				    	  </div>
+						</div>
+						
+						<!-- PART 2 -->
+						
+						
+					
+					
+			</section>
+
+			<section id="four" class="wrapper style3">
+				<div class="inner">
+
+					<header class="align-center">
+						<h2>Morbi interdum mollis sapien</h2>
+						<p>Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+					</header>
+
+				</div>
+			</section>
+
+
+		
+	
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+	</body>
+</html>

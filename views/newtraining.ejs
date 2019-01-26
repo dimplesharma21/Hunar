@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Utthan</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/assets/css/main.css" />
+
+         <style>
+  .capbox {
+    background-color: #92D433;
+    border: #B3E272 0px solid;
+    border-width: 0px 12px 0px 0px;
+    display: inline-block;
+    *display: inline; zoom: 1; /* FOR IE7-8 */
+    padding: 8px 40px 8px 8px;
+    }
+
+.capbox-inner {
+    font: bold 11px arial, sans-serif;
+    color: #000000;
+    background-color: #DBF3BA;
+    margin: 5px auto 0px auto;
+    padding: 3px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    }
+
+#CaptchaDiv {
+    font: bold 17px verdana, arial, sans-serif;
+    font-style: italic;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    }
+
+#CaptchaInput { margin: 1px 0px 1px 0px; width: 135px; }
+</style>
+
+
+    </head>
+    <body class="subpage">
+
+        <!-- Header -->
+            <header id="header">
+                <div class="logo">Utthan</div>
+                <a href="#menu" class="toggle"><span>Menu</span></a>
+            </header>
+
+        <!-- Nav -->
+            <nav id="menu">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="generic.html">Generic</a></li>
+                    <li><a href="elements.html">Elements</a></li>
+                </ul>
+            </nav>
+
+        <!-- One -->
+            <section id="one" class="wrapper style2">
+                <div class="inner">
+                    <div class="box">
+                    <div class="content">
+
+                    <!-- Elements -->
+                        
+                        <h3 id="elements"> Post Training </h3>
+                        <div class="row 200%">    
+                                    
+                            
+                            <div class="12u$ 12u$(medium)">
+
+                                <!-- Form -->
+                                    <h4> Training Details </h4>
+
+                                    <form method="post" action="/trainers/<%= tr %>/trainings/new">
+                                        <div class="row uniform">
+                                            
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="trainingtitle" placeholder="Training Title" />
+                                            </div>
+
+                                             <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="proposingorganization" placeholder=" Proposing Organization" />
+                                            </div>
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="implementingagency" placeholder=" Implementing Agency " />
+                                            </div>
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="nooftrainersin10years" id="nooftrainersin10years" placeholder=" No. of trainers in 10 years " />
+                                            </div>
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="noofcenters" id="noofcenters" placeholder=" No of centers " />
+                                            </div>
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="trainingcategory" id="trainingcategory" placeholder=" Training Category " />
+                                            </div>
+                                            <div class="6u 12u$(xsmall)">
+                                            <div class="select-wraper"><select name ="schedule">
+                                                <option value="">------------Schedule------------</option>
+                                                <option value="2 days a week">2 days a week</option>
+                                                <option value="3 days a week">3 days a week</option>
+                                                <option value="5 days a week">5 days a week</option>
+                                            </select>
+                                        </div>
+
+                                            </div>
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="projectcost" id="projectcost" placeholder=" Project Cost " />
+                                            </div>
+
+
+                                            <div class="12u$">
+                                                <textarea name="trainingdescription" rows="5" placeholder="Training Description"></textarea>
+                                            </div>
+
+
+                                            <div class="12u$">
+                                                <input type="text" name="trainingaddressline1" id="trainingaddressline1" placeholder=" Training Address line 1" />
+                                            </div>
+
+                                            <div class="12u$">
+                                                <input type="text" name="trainingaddressline2" id="trainingaddressline2" value="" placeholder=" Training Address Line 2" />
+                                            </div>
+
+                                            <div class="12u$">
+                                            <div class="select-wrapper">
+                                                <select name="state">
+<option value="">------------Select State------------</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Orissa">Orissa</option>
+<option value="Pondicherry">Pondicherry</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttaranchal">Uttaranchal</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="West Bengal">West Bengal</option>
+</select>
+</div>
+                                            </div>
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="city" id="city" placeholder=" City/Village " />
+                                            </div>
+
+
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="number" name="postalcode" placeholder=" Postal Code " />
+                                            </div>
+
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="number" name="trainercontactnumber" placeholder=" Trainer Contact Number " />
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <div class="select-wrapper">
+                                                    <select name="trainingtype">
+                                                        <option value="">Training Type</option>
+                                                        <option value="Full Time Job">Full Time Job</option>
+                                                        <option value="Part Time">Part Time</option>
+                                                        <option value="Internship">Internship</option>
+                                                                
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="12u 12u$(xsmall)">
+                                                <div class="select-wrapper">
+                                                    <select name="trainingcategory">
+                                                        <option value="">Select Industry Type</option>
+                                                        <option value="Hotel">Hotel</option>
+                                                        <option value="Computer (Corporate/IT)">Computer (Corporate/IT)</option>
+                                                        <option value="Hospital">Hospital</option>
+                                                        <option value="Municipal Corportaion">Municipal Corportaion</option>    
+                                                        <option value="Education">Education</option>
+                                                        <option value="Research">Research</option>
+                                                        <option value="Sports">Sports</option>
+                                                        <option value="Sanitation">Sanitation</option>
+                                                        <option value="Food">Food</option>
+                                                        <option value="Financial/Consultancy">Financial/Consultancy</option>
+                                                        <option value="Aviation">Aviation</option>
+                                                        <option value="Railways">Railways</option>
+                                                        <option value="Textile">Textile</option>
+                                                        <option value="Agriculture">Agriculture</option>
+                                                        <option value="Automobile">Automobile</option>
+                                                        <option value="Paper">Paper</option>
+                                                        <option value="Event Management">Event Management</option>
+                                                        <option value="Art and Creativity">Art and Creativity</option>            
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="12u 12u$(xsmall)">
+                                                <div class="select-wrapper">
+                                                    <select name="institution">
+                                                        <option value="">Institution Type</option>
+                                                        <option value="Government">Government</option>
+                                                        <option value="Public Sector Units (PSUs)">Public Sector Units (PSUs)</option>
+                                                        <option value="Private">Private</option>
+                                                                
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="12u 12u$(xsmall)">
+                                                <input type="text" name="traininglocation" placeholder="Write in format- City, India" />
+                                            </div>
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <label>Training Start Date :
+                                                <input type="date" name="trainingstartdate" placeholder="Start Date (dd/mm/yyyy)" />
+                                                </label>
+                                            </div>
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <label>Training End Date :
+                                                <input type="date" name="trainingenddate" placeholder="End Date (dd/mm/yyyy)" />
+                                                </label>
+                                            </div>
+
+
+                                            <div class="6u 12u$(xsmall)">
+
+                                                <label> Application Deadline Date :
+                                                <input type="date" name="trainingdeadlinedate" placeholder="Application Deadline Date (dd/mm/yyyy)" />
+                                                </label>
+                                            </div>
+
+
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="number" name="trainingpositions" placeholder="Number of positions available" />
+                                            </div>
+
+                                            <div class="12u$">
+
+                                            <hr>
+
+                                            <h4 id="elements"> Responsibilities and Skills </h4>
+                    
+                                            </div>
+
+                                            <div class="12u$">
+                                                
+                                                <textarea name="trainingabout" placeholder=" About The Training" rows="5"></textarea>
+                                            </div>
+
+                                            <div class="12u$">
+                                                <input type="text" name="trainingskillsrequired" placeholder="Prerequisites, if any" />
+                                            </div>
+
+                                            <div class="12u$">
+                                                <textarea name="trainingresponsibilities" placeholder=" Responsibilities " rows="5"></textarea>
+                                            </div>
+                                            
+                                            <div class="12u$">
+
+                                            <hr>
+                                            <div class="6u$ 12u$(small)">
+                                                <input type="checkbox" id="human" name="human" required>
+                                                <label for="human">I agree to the terms and conditions.</label>
+                                            </div>
+                                            
+
+                                            <div class="row uniform">
+                                            
+                                            <div class="6u$ 12u$(small)">
+                                                <input type="submit" value="Submit" class="fit" style="margin-left: 20em" />
+                                            </div>
+                                        </div>
+                                             
+                                            
+                                        </div>
+                                    </form>
+
+                                    
+
+                                
+                          </div>
+                        </div>
+                        </div>            
+
+                                    <!-- <form method="post" action="#"> -->
+                
+
+                            
+                        
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section id="four" class="wrapper style3">
+                <div class="inner">
+
+                    <header class="align-center">
+                        <h2>Morbi interdum mollis sapien</h2>
+                        <p>Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+                    </header>
+
+                </div>
+            </section>
+
+
+        
+    
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
